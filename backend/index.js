@@ -10,6 +10,7 @@ const mongoDBURI = process.env.mongoDBURI;
 
 // connect to MongoDB server
 
+
 try {
   await mongoose.connect(mongoDBURI, {
     useNewUrlParser: true,
