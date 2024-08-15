@@ -22,7 +22,7 @@ try {
 }
 
 app.use(cors({
-  origin: ["https://profile-fyi-phi.vercel.app/"],
+  // origin: ["https://profile-fyi-phi.vercel.app/"],
   methods: ["GET", "POST"],
   credentials: true, // enable cookies
 }));
