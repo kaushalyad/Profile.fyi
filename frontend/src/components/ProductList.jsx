@@ -7,7 +7,7 @@ const ProductList = () => {
   useEffect(() => {
     const getProduct = async () => {
       try {
-        const res = await axios.get(`${window.location.origin}/products`);
+        const res = await axios.get("http://localhost:4001/products");
         // console.log(res.data);
         setProductData(res.data);
         setFeatchedData(true);

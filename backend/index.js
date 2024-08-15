@@ -11,11 +11,6 @@ const mongoDBURI = process.env.mongoDBURI;
 
 // connect to MongoDB server
 
-app.get("/", (req, res) => {
-  app.use(express.static(path.resolve(__dirname, "frontend", "build")));
-  res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"));
-});
-
 try {
   await mongoose.connect(mongoDBURI, {
     useNewUrlParser: true,
@@ -26,13 +21,7 @@ try {
   console.log("Error: ", error);
 }
 
-app.use(
-  cors({
-    origin: "https://deploy", // replace with your frontend URL
-    methods: ["GET", "POST"],
-    credentials: true, // enable cookies
-  })
-);
+app.use(cors());
 
 // use routes
 app.use("/products", routes);
