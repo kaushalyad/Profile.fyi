@@ -7,7 +7,9 @@ const ProductList = () => {
   useEffect(() => {
     const getProduct = async () => {
       try {
-        const res = await axios.get("https://profile-fyi-vadb.vercel.app/products");
+        const res = await axios.get(
+          "https://profile-fyi-vadb.vercel.app/products"
+        );
         // console.log(res.data);
         setProductData(res.data);
         setFeatchedData(true);
