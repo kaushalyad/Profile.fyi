@@ -21,7 +21,11 @@ try {
   console.log("Error: ", error);
 }
 
-app.use(cors());
+app.use(cors({
+  origin: ["https://profile-fyi-phi.vercel.app/"],
+  methods: ["GET", "POST"],
+  credentials: true, // enable cookies
+}));
 
 // use routes
 app.use("/products", routes);
