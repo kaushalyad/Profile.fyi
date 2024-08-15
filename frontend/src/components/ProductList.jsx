@@ -8,7 +8,7 @@ const ProductList = () => {
     const getProduct = async () => {
       try {
         const res = await axios.get(
-          "https://profile-fyi-vadb.vercel.app/products"
+          "https://profile-fyi.onrender.com/products"
         );
         // console.log(res.data);
         setProductData(res.data);
