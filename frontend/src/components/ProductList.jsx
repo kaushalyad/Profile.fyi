@@ -23,7 +23,7 @@ const ProductList = () => {
   return (
     <div className="flex flex-col gap-5 p-5">
       <div className=" text-2xl font-semibold">Best Deals Available Today</div>
-      <div className="flex justify-evenly items-center flex-wrap  gap-10">
+      <div className="flex justify-center items-center flex-wrap  gap-14 w-[98%]">
         {fetchedData &&
           productData[0].products.map((product) => (
             <div key={product.id} className="flex justify-center items-center">
