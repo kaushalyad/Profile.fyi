@@ -1,4 +1,4 @@
-import React, { useState, useEffect  } from "react";
+import React, { useState, useEffect } from "react";
 import Product from "./Product";
 import axios from "axios";
 const ProductList = () => {
@@ -7,7 +7,7 @@ const ProductList = () => {
   useEffect(() => {
     const getProduct = async () => {
       try {
-        const res = await axios.get("http://localhost:4001/products");
+        const res = await axios.get(`${window.location.origin}/products`);
         // console.log(res.data);
         setProductData(res.data);
         setFeatchedData(true);
@@ -25,7 +25,7 @@ const ProductList = () => {
         {fetchedData &&
           productData[0].products.map((product) => (
             <div key={product.id} className="flex justify-center items-center">
-              <Product product={product}  />
+              <Product product={product} />
             </div>
           ))}
       </div>

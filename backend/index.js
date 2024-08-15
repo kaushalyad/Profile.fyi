@@ -3,12 +3,18 @@ import dotenv from "dotenv";
 import mongoose from "mongoose";
 import cors from "cors";
 import routes from "./router/product.router.js";
+import path from "path";
 const app = express();
 dotenv.config();
 const PORT = process.env.PORT || 3001;
 const mongoDBURI = process.env.mongoDBURI;
 
 // connect to MongoDB server
+
+app.get("/", (req, res) => {
+  app.use(express.static(path.resolve(__dirname, "frontend", "build")));
+  res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"));
+});
 
 try {
   await mongoose.connect(mongoDBURI, {
@@ -20,7 +26,13 @@ try {
   console.log("Error: ", error);
 }
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://deploy", // replace with your frontend URL
+    methods: ["GET", "POST"],
+    credentials: true, // enable cookies
+  })
+);
 
 // use routes
 app.use("/products", routes);
