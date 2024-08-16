@@ -12,7 +12,7 @@ const CartPage = () => {
     const existingProducts = JSON.parse(localStorage.getItem("products")) || [];
     setCartProducts(existingProducts);
   }, [updated]); // Empty dependency array to run only once on mount
-  
+
   const subTotal = useMemo(() => {
     let sum = 0;
     cartProducts.forEach((product) => {
@@ -51,7 +51,7 @@ const CartPage = () => {
   };
 
   return (
-    <div className="px-6 lg:px-16 py-6">
+    <div className="px-6 lg:px-16 py-6 bg-white text-black">
       <div>
         <p className="text-4xl font-semibold">Shopping Cart</p>
         <div className="mt-2 flex justify-between">
