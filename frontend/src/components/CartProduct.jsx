@@ -43,7 +43,7 @@ const CartProduct = ({ product }) => {
             <div className="text-green-700 py-0 border-gray-900 border-r-2 pr-2 ">
               <p className=" cursor-pointer">
                 <button
-                  className="text-[10px] md:text-lg"
+                  className="text-[8px] md:text-lg"
                   onClick={removeProduct(product)}
                 >
                   Delete
@@ -52,21 +52,21 @@ const CartProduct = ({ product }) => {
             </div>
             <div className="text-green-700 border-gray-900 border-r-2 px-2 py-0">
               <p className="cursor-pointer">
-                <button className="text-[10px] md:text-lg">
+                <button className="text-[8px] md:text-lg">
                   Save for later
                 </button>
               </p>
             </div>
             <div className="text-green-700 border-gray-900 border-r-2 px-2 text-center">
               <p className=" cursor-pointer ">
-                <button className="text-[10px] md:text-lg">
+                <button className="text-[8px] md:text-lg">
                   See more like this
                 </button>
               </p>
             </div>
             <div className="text-green-700 border-gray-900  px-2 text-center">
               <p className="cursor-pointer ">
-                <button className="text-[10px] md:text-lg">Share</button>
+                <button className="text-[8px] md:text-lg">Share</button>
               </p>
             </div>
           </div>
