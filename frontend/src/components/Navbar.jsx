@@ -44,7 +44,7 @@ const Navbar = () => {
                 />
               </svg>
               {totalProducts > 0 ? (
-                <span className="badge badge-sm indicator-item text-red-600">
+                <span className="badge badge-sm indicator-item text-green-500 bg-white">
                   {totalProducts}
                 </span>
               ) : (

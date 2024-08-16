@@ -42,7 +42,7 @@ const Product = ({ product }) => {
   };
 
   return (
-    <div className="card card-compact bg-base-100 max-w-96 min-w-96 shadow-xl p-2">
+    <div className="card card-compact bg-base-100 max-w-96 min-w-96 shadow-xl p-2 bg-green-100">
       <figure>
         <img src={`${product.thumbnail}`} alt={product.title} />
       </figure>
@@ -73,7 +73,7 @@ const Product = ({ product }) => {
           <div className="text-sm text-gray-500">
             900+ bought in the past month
           </div>
-          <div className="text-xl font-semibold text-gray-900">
+          <div className="text-xl font-semibold text-black">
             &#36;
             {Math.floor(
               product.price - (product.price * product.discountPercentage) / 100

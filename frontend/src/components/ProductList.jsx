@@ -21,8 +21,8 @@ const ProductList = () => {
   }, []);
   // console.log(productData[0].products);
   return (
-    <div className="flex flex-col gap-5 p-5">
-      <div className=" text-2xl font-semibold">Best Deals Available Today</div>
+    <div className="flex flex-col gap-5 p-5 bg-white">
+      <div className=" text-2xl font-semibold text-black">Best Deals Available Today</div>
       <div className="flex justify-center items-center flex-wrap  gap-14 w-[98%]">
         {fetchedData &&
           productData[0].products.map((product) => (
