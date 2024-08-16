@@ -21,7 +21,13 @@ try {
   console.log("Error: ", error);
 }
 
-app.use(cors());
+app.use(cors(
+  {
+    origin: "https://profile-fyi-1.onrender.com/",
+    methods: ["GET", "POST"],
+    credentials: true,
+  }
+));
 // use routes
 app.use("/products", routes);
 app.listen(PORT, () => {
