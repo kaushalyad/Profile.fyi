@@ -6,7 +6,7 @@ const Navbar = () => {
   // fetch the total products count from local storage
   useEffect(() => {
     const totalCount = JSON.parse(localStorage.getItem("products")) || [];
-    
+
     let sum = 0;
     totalCount.map((product) => {
       sum +=
@@ -62,9 +62,11 @@ const Navbar = () => {
               </span>
               <span className="text-info">Subtotal: ${subTotal}</span>
               <div className="card-actions">
-                <button className="btn btn-primary btn-block">
-                  <NavLink to="/cart">View cart</NavLink>
-                </button>
+                <NavLink to="/cart">
+                  <button className="btn btn-primary btn-block">
+                    View cart
+                  </button>
+                </NavLink>
               </div>
             </div>
           </div>

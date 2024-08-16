@@ -11,7 +11,7 @@ const CartProduct = ({ product }) => {
     updated ? setUpdated(false) : setUpdated(true);
     // console.log("Product removed from cart:", product);
     toast.success("Product removed successfully!", {
-      position: "top-center",
+      position: "top-center", 
     });
   };
   return (
