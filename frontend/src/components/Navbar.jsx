@@ -62,7 +62,7 @@ const Navbar = () => {
               </span>
               <span className="text-info">Subtotal: ${subTotal}</span>
               <div className="card-actions">
-                <NavLink to="/cart">
+                <NavLink to="/cart" className="w-[100%]">
                   <button className="btn btn-primary btn-block">
                     View cart
                   </button>
