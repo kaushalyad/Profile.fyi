@@ -7,7 +7,7 @@ const Footer = () => {
         <div className=" text-center bg-gray-500 hover:bg-gray-400 text-white min-h-10 flex items-center justify-center font-semibold cursor-pointer">
           <p>Back to top</p>
         </div>
-        <div className="container mx-auto pl-20 pr-20 pt-5 flex flex-row justify-between">
+        <div className="container mx-auto pl-3 pt-5 flex flex-row justify-between lg:pl-20 lg:pr-20">
           <div>
             <div>
               <p className=" text-gray-500">ABOUT</p>
