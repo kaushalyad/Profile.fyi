@@ -15,7 +15,7 @@ const CartProduct = ({ product }) => {
     });
   };
   return (
-    <div className="card lg:card-side bg-base-50 shadow-xl flex items-center justify-start gap-10 p-5 bg-green-100">
+    <div className="card lg:card-side bg-base-50 shadow-xl flex items-center justify-start gap-10 p-5 bg-green-100 min-h-72">
       <div className="card lg:card-side bg-base-50   max-w-20">
         <figure>
           <img src={`${product.thumbnail}`} alt="Album" />
