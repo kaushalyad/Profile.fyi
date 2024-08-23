@@ -42,7 +42,7 @@ const Product = ({ product }) => {
   };
 
   return (
-    <div className="card card-compact bg-base-100 max-w-96 min-w-96 shadow-xl  bg-green-100">
+    <div className="card card-compact bg-base-100 max-w-96 min-w-[355px] shadow-xl  bg-green-100">
       <figure>
         <img src={`${product.thumbnail}`} alt={product.title} />
       </figure>

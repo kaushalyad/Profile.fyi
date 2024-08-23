@@ -31,7 +31,7 @@ const ProductList = () => {
           <Processing />
         ) : (
           productData[0].products.map((product) => (
-            <div key={product.id} className="flex justify-center items-center pl-3">
+            <div key={product.id} className="flex justify-center items-center pl-5">
               <Product product={product} />
             </div>
           ))
