@@ -22,11 +22,11 @@ try {
 }
 
 app.use(cors(
-  {
-    origin: "https://profile-fyi-1.onrender.com",
-    methods: ["GET", "POST"],
-    credentials: true,
-  }
+  // {
+  //   origin: "https://profile-fyi-1.onrender.com",
+  //   methods: ["GET", "POST"],
+  //   credentials: true,
+  // }
 ));
 // use routes
 app.use("/products", routes);

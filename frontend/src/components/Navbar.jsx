@@ -19,10 +19,10 @@ const Navbar = () => {
   });
   // console.log(totalProducts);
   return (
-    <div className="navbar bg-[#047BD5]">
+    <div className="navbar bg-[#047BD5] sticky top-0 z-10">
       <div className="flex-1">
-        <NavLink to="/" className="btn btn-ghost text-white text-2xl">
-          Apnakart
+        <NavLink to="/">
+          <img src="./sweet_home_logo.png"  className= "w-20"  />
         </NavLink>
       </div>
       <div className="flex-none">

@@ -4,6 +4,7 @@ import Home from "../pages/Home.jsx";
 import CartPage from "../pages/CartPage.jsx";
 import Navbar from "../components/Navbar.jsx";
 import NotFound from "../pages/NotFound.jsx";
+import Footer from "../components/Footer.jsx";
 export const UpdatedContext = createContext();
 const Router = () => {
   const [updated, setUpdated] = useState(false);
@@ -18,6 +19,7 @@ const Router = () => {
         <Route path="/cart" element={<CartPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </UpdatedContext.Provider>
   );
 };

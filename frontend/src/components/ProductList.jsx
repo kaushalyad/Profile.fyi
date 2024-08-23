@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Product from "./Product";
 import axios from "axios";
+import Processing from "./Processing";
 const ProductList = () => {
   const [productData, setProductData] = useState([]);
   const [fetchedData, setFeatchedData] = useState(false);
@@ -22,14 +23,19 @@ const ProductList = () => {
   // console.log(productData[0].products);
   return (
     <div className="flex flex-col gap-5 p-5 bg-white">
-      <div className=" text-2xl font-semibold text-black">Best Deals Available Today</div>
-      <div className="flex justify-center items-center flex-wrap  gap-14 w-[98%]">
-        {fetchedData &&
+      <div className=" text-2xl font-semibold text-black">
+        Best Deals Available Today
+      </div>
+      <div className="flex justify-center items-center flex-wrap  gap-14 w-[98%] min-h-72">
+        {fetchedData === false ? (
+          <Processing />
+        ) : (
           productData[0].products.map((product) => (
             <div key={product.id} className="flex justify-center items-center">
               <Product product={product} />
             </div>
-          ))}
+          ))
+        )}
       </div>
     </div>
   );
