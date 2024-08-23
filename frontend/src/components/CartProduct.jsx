@@ -15,7 +15,7 @@ const CartProduct = ({ product }) => {
     });
   };
   return (
-    <div className="card lg:card-side bg-base-50 shadow-xl flex items-center justify-start gap-10 p-5 bg-green-100 min-h-72">
+    <div className="card lg:card-side bg-base-50 shadow-xl flex items-center justify-start gap-10 p-5 bg-green-100 ">
       <div className="card lg:card-side bg-base-50   max-w-20">
         <figure>
           <img src={`${product.thumbnail}`} alt="Album" />
@@ -43,7 +43,7 @@ const CartProduct = ({ product }) => {
             <div className="text-green-700 py-0 border-gray-900 border-r-2 pr-2 ">
               <p className=" cursor-pointer">
                 <button
-                  className="text-[8px] md:text-lg text-red-600"
+                  className="text-[8px] md:text-lg text-red-500"
                   onClick={removeProduct(product)}
                 >
                   Delete
