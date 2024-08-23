@@ -51,7 +51,7 @@ const CartPage = () => {
   };
 
   return (
-    <div className="px-6 lg:px-16 py-6 bg-white text-black min-h-72">
+    <div className="px-6 lg:px-16 py-6 bg-white text-black min-h-96">
       <div>
         <p className="text-4xl font-semibold">Shopping Cart</p>
         <div className="mt-2 flex justify-between">
