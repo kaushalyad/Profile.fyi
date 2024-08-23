@@ -26,7 +26,7 @@ const ProductList = () => {
       <div className=" text-2xl font-semibold text-black">
         Best Deals Available Today
       </div>
-      <div className="flex justify-center items-center flex-wrap  gap-14 w-[98%] min-h-72">
+      <div className="flex justify-center items-center flex-wrap  gap-14 w-[94%] min-h-72">
         {fetchedData === false ? (
           <Processing />
         ) : (
