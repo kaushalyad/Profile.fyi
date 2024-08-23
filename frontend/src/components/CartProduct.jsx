@@ -43,7 +43,7 @@ const CartProduct = ({ product }) => {
             <div className="text-green-700 py-0 border-gray-900 border-r-2 pr-2 ">
               <p className=" cursor-pointer">
                 <button
-                  className="text-[8px] md:text-lg"
+                  className="text-[8px] md:text-lg text-red-600"
                   onClick={removeProduct(product)}
                 >
                   Delete
