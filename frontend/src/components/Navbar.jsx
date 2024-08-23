@@ -22,7 +22,7 @@ const Navbar = () => {
     <div className="navbar bg-[#047BD5] sticky top-0 z-10 w-[100%]">
       <div className="flex-1">
         <NavLink to="/">
-          <img src="./sweet_home_logo.png"  className= "w-20"  />
+          <img src="./sweet_home_logo.png" className="w-20" />
         </NavLink>
       </div>
       <div className="flex-none">
